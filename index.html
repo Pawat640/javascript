@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hello World</title>
+<script>
+    function greeting() {
+        let name = prompt('pls Input ur name : ');
+        window.alert('Hello '+ name);
+        document.getElementById('demo').innerHTML = 'Hello '+name ;
+    }
+    function changeTored() {
+        document.getElementById('demo').style.color = "red";
+        document.getElementById('demo').style.fontSize = "30px";
+    }
+    function changetodog() {
+        document.getElementById('pic').src = 'dog.jpg' ;
+    }
+    function changetocat() {
+        document.getElementById('pic').src = 'cat.png' ;
+    }
+
+</script>
 </head>
 <body>
-<img src = 'https://www.bangkokpost.com/life/arts-and-entertainment/1764659/the-continuing-adventures-of-doraemon'>
-<img src = 'https://www.bangkokpost.com/life/arts-and-entertainment/1764659/the-continuing-adventures-of-doraemon'>
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <h2>My First JavaScript</h2>
+    <img id = "pic" src = "cat.png"><br>
 
+    <button type="button"
+    onclick="greeting()">
+    Click me to greeting.</button>
+    <button type="button"
+    onclick="changeTored()">
+    Click to change the color of text.</button>
+    <button type="button"
+    onclick="changetodog()">
+    Click to change to Scoopy Doo.</button>
+    <button type="button"
+    onclick="changetocat()">
+    Click to change to Tom.</button>
+
+
+
+    <p id="demo"></p>
+                                                                        
 </body>
 </html>
